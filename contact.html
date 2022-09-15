@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- ReCaptcha-->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -99,9 +102,11 @@
 
                 <div class="col-md-12 my-3">
                   <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
+                  <div class="error-message">Votre message n'a pas pu être envoyé :(</div>
                   <div class="sent-message">Votre message a été envoyé. Merci !</div>
                 </div>
+  
+                <div style="margin-bottom: 10px;" class="g-recaptcha brochure__form__captcha" data-sitekey="6LcoT94ZAAAAAH7wKr53wZX-0QLPd84xPW4pwSPU"></div>
 
                 <div class="col-md-6 mt-0 form-group">
                   <input type="submit" class="readmore d-block w-100" value="Envoyer">
