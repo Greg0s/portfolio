@@ -43,7 +43,7 @@
           <div class="col-md-2">
             <ul class="custom-menu">
               <li><a href="index.html">Portfolio</a></li>
-              <li class="active"><a href="about.html">À propos</a></li>
+              <li class="active"><a data-localize="header.about" href="about.html">À propos</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -54,6 +54,11 @@
     <nav class="navbar navbar-light custom-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">gregoiretinn.es</a>
+        <div class="divbtnlang">
+          <button class="btnlang" onclick="langFR()"><span>FR</span></button>
+          |
+          <button class="btnlang" onclick="langEN()"><span>EN</span></button>
+        </div>
         <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
           <span></span>
         </a>
@@ -67,8 +72,8 @@
         <div class="row mb-5 ms-0 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
 
-            <h2 class="mb-4 hg">À propos</h2>
-            <p class="mb-0 ">
+            <h2 class="mb-4 hg" data-localize="header.about">À propos</h2>
+            <p data-localize="about.presentation" class="mb-0 ">
               Étudiant en deuxième année de la formation <a class="intext" target="_blank" href="https://www.ingenieur-imac.fr/">IMAC</a> à l'ESIEE (ex-ESIPE).
               <br>
               Passionné par le numérique et l’image, j’aime toucher à tout et découvrir de nouvelles choses en rapport à ces domaines.
@@ -86,8 +91,9 @@
                     <!--<img src="assets/img/wave1.png" id="ab_wave"/>-->
                     <img src="assets/img/about_me.jpg" alt="Image" class="img-fluid">
                     <div class="mt-4 row">
-                    <p class="col-md-6 d-flex justify-content-around dl-btn"><a target="_blank" href="files/CV_2023.pdf" class="readmore">Télécharger mon CV</a> </p>
-                    <p class="col-md-6 d-flex justify-content-around dl-btn"><a target="_blank" href="files/Portfolio.pdf" class="readmore">Télécharger mon portfolio</a> </p>
+                      <p class="col-md-4 d-flex ml-auto dl-btn"><a target="_blank" href="files/Portfolio.pdf" class="readmore">portfolio.pdf</a> </p>
+                      <p class="col-md-4 d-flex justify-content-around dl-btn"><a target="_blank" href="files/CV_2023.pdf" class="readmore">CV.pdf</a> </p>
+                      <p class="col-md-4 d-flex justify-content-around dl-btn"><a target="_blank" href="files/CV_2023_en.pdf" class="readmore">CV_english.pdf</a> </p>
                     </div>
                   </div>
                 </div>
@@ -130,7 +136,7 @@
                       </div>
                       <div class="d-flex mb-1">
                         <div>
-                          <strong>Javascript</strong>, JQuery, Typescript
+                          <strong>Javascript</strong>, Vue.js, JQuery, Typescript
                         </div>
                       </div>
                       <div class="d-flex mb-1">
@@ -285,3 +291,8 @@
 </body>
 
 </html>
+
+<!--Scripts for multilingual support-->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.localize.min.js"></script>
+<script src="assets/js/lang.js"></script>
