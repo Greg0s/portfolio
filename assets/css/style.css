@@ -659,3 +659,16 @@ a{
     position: absolute;
   }
 }
+
+@media (max-width:769px){
+  .item-wrap:after {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .work-info {
+    margin-top: 0px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
