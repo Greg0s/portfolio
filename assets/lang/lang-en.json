@@ -1,0 +1,26 @@
+{
+    "header":{
+        "about" : "About"
+    },
+    "index":{
+        "welcome" : "Welcome",
+        "presentation" : "My name is Grégoire Tinnes, multimedia engineer student",
+        "filter-all":"All"
+    },
+    "keywords":{
+        "graph":"Graphic design",
+        "av":"Audiovisual",
+        "photo":"Photography"
+    },
+    "about":{
+        "presentation":"Student in the second year of the <a class='intext' target='_blank' href='https://www.ingenieur-imac.fr/'>IMAC</a> training at ESIEE (ex-ESIPE).<br>Passionate about digital and image, I like to touch everything and discover new things related to these fields.<br> "
+    },
+    "contact":{
+        "presentation":"Send me a message, I will answer as soon as possible! :)",
+        "name":"Name",
+        "subject":"Subject",
+        "send":"send",
+        "loading":"loading",
+        "social":"You can also find me on my various social networks"
+    }
+}

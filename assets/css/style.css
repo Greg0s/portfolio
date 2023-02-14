@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   margin-bottom: 0;
 }
 
-.item .item-wrap > .work-info span {
+.item .item-wrap > .work-info span, .item .item-wrap > .work-info div {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -395,6 +395,23 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+/*languages*/
+
+.btnlang{
+  background-color: white;
+  border-style: none;
+}
+
+.btnlang:hover{
+  opacity: 0.8;
+}
+
+.divbtnlang{
+  margin-left: auto;
+  margin-right: 2em;
+}
+
 /* Custom Navmenu */
 .custom-navmenu {
   /* background: #0d1e2d; */

@@ -5,14 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="Portfolio et CV de Grégoire Tinnes, étudiant en formation d'ingénieur mulitmédia IMAC à l'École supérieure d'ingénieurs Paris-Est.">
-
+  
   <title>Grégoire Tinnes - Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -44,7 +43,7 @@
         <div class="col-md-2">
           <ul class="custom-menu">
             <li class="active"><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html">À propos</a></li>
+            <li><a data-localize="header.about" href="about.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -64,6 +63,11 @@
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">gregoiretinn.es</a>
+      <div class="divbtnlang">
+        <button class="btnlang" onclick="langFR()"><span>FR</span></button>
+        |
+        <button class="btnlang" onclick="langEN()"><span>EN</span></button>
+      </div>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
@@ -77,17 +81,17 @@
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Bienvenue</h2>
-          <p class="mb-0">Je m'appelle Grégoire Tinnes, étudiant ingénieur multimédia</p>
+            <h2 data-localize="index.welcome">Bienvenue</h2>
+          <p data-localize="index.presentation" class="mb-0">Je m'appelle Grégoire Tinnes, étudiant ingénieur multimédia</p>
           </div>
           <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">Tout</a>
-              <a href="#" data-filter=".graph">Graphisme</a>
+              <a data-localize="index.filter-all" href="#" data-filter="*" class="active">Tout</a>
+              <a data-localize="keywords.graph" href="#" data-filter=".graph">Graphisme</a>
               <a href="#" data-filter=".web">Web</a>
-              <a href="#" data-filter=".av">Audiovisuel</a>
+              <a data-localize="keywords.av" href="#" data-filter=".av">Audiovisuel</a>
               <a href="#" data-filter=".ddd">3D</a>
-              <a href="#" data-filter=".photo">Photographie</a>
+              <a data-localize="keywords.photo" href="#" data-filter=".photo">Photographie</a>
             </div>
           </div>
         </div>
@@ -96,7 +100,7 @@
             <a href="supervision.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>SuperVision - Court-métrage</h3>
-                <span>Audiovisuel</span>
+                <span data-localize="keywords.av">Audiovisuel</span>
               </div>
               <img class="img-fluid" src="assets/img/supervision_min.jpg">
             </a>
@@ -105,7 +109,7 @@
             <a href="le-petit-prince.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Le Petit Prince - Animation</h3>
-                <span>3D - Audiovisuel</span>
+                <div>3D - <span data-localize="keywords.av">Audiovisuel</span></div>
               </div>
               <img class="img-fluid" src="assets/img/petitprince_min.png">
             </a>
@@ -123,7 +127,7 @@
             <a href="spotify.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Spotify</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/spotify_min.jpg">
             </a>
@@ -132,7 +136,7 @@
             <a href="fruiteleg.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Fruiteleg</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/fruiteleg_min.jpg">
             </a>
@@ -141,7 +145,7 @@
             <a href="villa-savoye.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Villa Savoye</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/villa_savoye_min.png">
             </a>
@@ -150,7 +154,7 @@
             <a href="its-raining-men.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>It's Raining Men - Motion design</h3>
-                <span>Audiovisuel</span>
+                <span data-localize="keywords.av">Audiovisuel</span>
               </div>
               <img class="img-fluid" src="assets/img/itsrainingmen_min.jpg">
             </a>
@@ -168,7 +172,7 @@
             <a href="myzik.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Myzik - Pub</h3>
-                <span>Audiovisuel</span>
+                <span data-localize="keywords.av">Audiovisuel</span>
               </div>
               <img class="img-fluid" src="assets/img/myzik.jpg">
             </a>
@@ -186,7 +190,7 @@
             <a href="photographie.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Photos personnelles</h3>
-                <span>Photographie</span>
+                <span data-localize="keywords.photo">Photographie</span>
               </div>
               <img class="img-fluid" src="assets/img/photo_min.jpg">
             </a>
@@ -195,7 +199,7 @@
             <a href="brise.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Brisé - Court métrage</h3>
-                <span>Audiovisuel</span>
+                <span data-localize="keywords.av">Audiovisuel</span>
               </div>
               <img class="img-fluid" src="assets/img/brise_min.jpg">
             </a>
@@ -222,7 +226,7 @@
             <a href="ccr.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Auto-école CCR</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/ccr_min.jpg">
             </a>
@@ -231,7 +235,7 @@
             <a href="unisson.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Unis-son</h3>
-                <span>Web - Graphisme</span>
+                <div>Web - <span data-localize="keywords.graph">Graphisme</span></div>
               </div>
               <img class="img-fluid" src="assets/img/unisson_min.jpg">
             </a>
@@ -258,7 +262,7 @@
             <a href="place-des-tartines.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Place des tartines</h3>
-                <span>Photographie</span>
+                <span data-localize="keywords.photo">Photographie</span>
               </div>
               <img class="img-fluid" src="assets/img/placetartines_min.jpg">
             </a>
@@ -267,7 +271,7 @@
             <a href="fragarance.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>fraGarance</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/fragarance_min.jpg">
             </a>
@@ -276,7 +280,7 @@
             <a href="deeisb.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Dieu existe et il s'amuse bien - Court métrage</h3>
-                <span>Audiovisuel</span>
+                <span data-localize="keywords.av">Audiovisuel</span>
               </div>
               <img class="img-fluid" src="assets/img/deeisb_min.jpg">
             </a>
@@ -285,7 +289,7 @@
             <a href="chaine-youtube.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Chaîne YouTube</h3>
-                <span>Audiovisuel</span>
+                <span data-localize="keywords.av">Audiovisuel</span>
               </div>
               <img class="img-fluid" src="assets/img/youtube_min.jpg">
             </a>
@@ -294,7 +298,7 @@
             <a href="printemps-de-bourges.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Le Printemps de Bourges</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/bourges_min.jpg">
             </a>
@@ -303,7 +307,7 @@
             <a href="le-v.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Le V</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/lev_min.jpg">
             </a>
@@ -312,7 +316,7 @@
             <a href="black-house.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>The Black House</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/blackhouse_min.jpg">
             </a>
@@ -321,7 +325,7 @@
             <a href="customizn-shirt.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Customiz'N Shirt</h3>
-                <span>Graphisme</span>
+                <span data-localize="keywords.graph">Graphisme</span>
               </div>
               <img class="img-fluid" src="assets/img/customiz_min.jpg">
             </a>
@@ -374,3 +378,8 @@
 </body>
 
 </html>
+
+<!--Scripts for multilingual support-->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.localize.min.js"></script>
+<script src="assets/js/lang.js"></script>

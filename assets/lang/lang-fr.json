@@ -1,0 +1,26 @@
+{
+    "header":{
+        "about" : "À propos"
+    },
+    "index":{
+        "welcome" : "Bienvenue",
+        "presentation" : "Je m'appelle Grégoire Tinnes, étudiant ingénieur multimédia",
+        "filter-all":"Tout"
+    },
+    "keywords":{
+        "graph":"Graphisme",
+        "av":"Audiovisuel",
+        "photo":"Photographie"
+    },
+    "about":{
+        "presentation":"Étudiant en deuxième année de la formation <a class='intext' target='_blank' href='https://www.ingenieur-imac.fr/'>IMAC</a> à l'ESIEE (ex-ESIPE).<br>Passionné par le numérique et l’image, j’aime toucher à tout et découvrir de nouvelles choses en rapport à ces domaines.<br>"          
+    },
+    "contact":{
+        "presentation":"Envoyez-moi un message, j'y répondrai dans les meilleurs délais ! :)",
+        "name":"Nom",
+        "subject":"Sujet",
+        "send":"Envoyer",
+        "loading":"Chargement",
+        "social":"Vous pouvez également me retrouver sur mes différents réseaux"
+    }
+}
