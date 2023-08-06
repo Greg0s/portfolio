@@ -1,11 +1,12 @@
 const year = new Date().getFullYear();
-const footer = `
+const footer =
+  `
 <div class='container'>
 <div class='row'>
   <div class='col-sm-6'>
-    <p class='mb-1'>&copy; Grégoire Tinnes `
-    + year +
-    `</p>
+    <p class='mb-1'>&copy; Grégoire Tinnes ` +
+  year +
+  `</p>
     <div class='credits'>
       Based on MyPortfolio by <a target='_blank' href='https://bootstrapmade.com/'>BootstrapMade</a>
     </div>
@@ -19,7 +20,7 @@ const footer = `
   </div>
 </div>
 </div>
-`
+`;
 
 const header = `
 <div class="container py-2 py-md-5">
@@ -27,8 +28,13 @@ const header = `
   <div class="col-md-2">
     <ul class="custom-menu">
         <li class="portfolioMenu"><a href="index.html">Portfolio</a></li>
-        <li class="aboutMenu"><a data-localize="header.about" href="about.html">À propos</a></li>
+        <li class="aboutMenu"><a class="aboutMenu-link" data-localize="header.about" href="about.html">À propos</a></li>
         <li class="contactMenu"><a href="contact.html">Contact</a></li>
+        <div class="divbtnlang divbtnlang-mobile">
+  <button class="btnlang fr" onclick="langFR()"><span>FR</span></button>
+  |
+  <button class="btnlang en" onclick="langEN()"><span>EN</span></button>
+</div>
     </ul>
   </div>
   <!-- <div class="col-md-6 d-none d-md-block  mr-auto">
@@ -42,44 +48,54 @@ const header = `
   </div> -->
 </div>
 </div>
-`
+`;
 
-const navbar =`
+const navbar = `
 <div class="container">
 <a class="navbar-brand" href="index.html">gregoiretinn.es</a>
-<div class="divbtnlang">
-  <button class="btnlang" onclick="langFR()"><span>FR</span></button>
+<div class="divbtnlang divbtnlang-desktop">
+  <button class="btnlang fr" onclick="langFR()"><span>FR</span></button>
   |
-  <button class="btnlang" onclick="langEN()"><span>EN</span></button>
+  <button class="btnlang en" onclick="langEN()"><span>EN</span></button>
 </div>
 <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
   <span></span>
 </a>
 </div>
-`
+`;
 
-window.onload= function() {
-    document.querySelectorAll('.footer').forEach(element => {
-        element.innerHTML = footer;
+window.onload = function () {
+  document.querySelectorAll(".footer").forEach((element) => {
+    element.innerHTML = footer;
+  });
+
+  document.querySelector("#main-navbar").innerHTML = header;
+
+  document.querySelectorAll(".custom-navbar").forEach((element) => {
+    element.innerHTML = navbar;
+  });
+
+  if (currentPage == "portfolio") {
+    document.querySelectorAll(".portfolioMenu").forEach((element) => {
+      element.classList.add("active");
     });
-
-    document.querySelector('#main-navbar').innerHTML = header;
-
-    document.querySelectorAll('.custom-navbar').forEach(element => {
-        element.innerHTML = navbar;
+  } else if (currentPage == "about") {
+    document.querySelectorAll(".aboutMenu").forEach((element) => {
+      element.classList.add("active");
     });
+  } else if (currentPage == "contact") {
+    document.querySelectorAll(".contactMenu").forEach((element) => {
+      element.classList.add("active");
+    });
+  }
 
-    if(currentPage == 'portfolio'){
-        document.querySelectorAll('.portfolioMenu').forEach(element => {
-            element.classList.add('active');
-        });
-    }else if(currentPage == 'about'){
-        document.querySelectorAll('.aboutMenu').forEach(element => {
-            element.classList.add('active');
-        });
-    }else if(currentPage == 'contact'){
-        document.querySelectorAll('.contactMenu').forEach(element => {
-            element.classList.add('active');
-        });
-    }
-}
+  // lang
+  // let checker = document.querySelector(".aboutMenu-link").innerHTML;
+  // if (checker == "about") {
+  //   document.querySelector(".en").classList.add("active");
+  //   document.querySelector(".fr").classList.remove("active");
+  // } else {
+  //   document.querySelector(".fr").classList.add("active");
+  //   document.querySelector(".en").classList.remove("active");
+  // }
+};
