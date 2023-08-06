@@ -9,12 +9,14 @@
   },
   "keywords": {
     "graph": "Graphisme",
+    "web": "Développement web",
     "av": "Audiovisuel",
     "photo": "Photographie",
     "prog": "Programmation"
   },
   "about": {
-    "presentation": "Étudiant en deuxième année de la formation <a class='intext' target='_blank' href='https://www.ingenieur-imac.fr/'>IMAC</a> à l'ESIEE (ex-ESIPE).<br>Passionné par le numérique et l’image, j’aime toucher à tout et découvrir de nouvelles choses en rapport à ces domaines.<br>"
+    "hello": "À propos",
+    "presentation": "Étudiant en troisième année de la formation <a class='intext' target='_blank' href='https://www.ingenieur-imac.fr/'>IMAC</a> (ESIEE), une formation qui allie art et science.<br>Passionné par la création numérique et visuelle, j'aime apprendre en permanence dans les domaines du multimédia, notamment en développement web et en design graphique."
   },
   "contact": {
     "presentation": "Envoyez-moi un message, j'y répondrai dans les meilleurs délais ! :)",
