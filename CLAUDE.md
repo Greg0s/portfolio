@@ -19,7 +19,7 @@ The site is deployed via GitHub Pages (see `CNAME` → `gregoiretinn.es`).
   - `lang.js`, `jquery.localize.min.js` — client-side i18n switcher (FR/EN)
   - `main.js` — template behavior (filters, animations, etc.)
 - `assets/lang/lang-fr.json`, `assets/lang/lang-en.json` — translation strings, keyed and referenced via `data-localize="section.key"` attributes in HTML
-- `assets/vendor/` — third-party libraries (Bootstrap, AOS, Swiper, isotope, php-email-form, bootstrap-icons) — vendored, do not hand-edit
+- `assets/vendor/` — third-party libraries (Bootstrap, AOS, Swiper, isotope, bootstrap-icons) — vendored, do not hand-edit
 - `assets/img/` — images (a `source` subfolder for originals is gitignored)
 
 ## Working conventions
