@@ -19,11 +19,6 @@
     "presentation": "Diplômé ingénieur multimédia de la formation <a class='intext' target='_blank' href='https://www.ingenieur-imac.fr/'>IMAC</a> (ESIEE), une formation qui allie art et science.<br>Passionné par la création numérique et visuelle, j'aime apprendre en permanence dans les domaines du multimédia, notamment en développement web et en design graphique."
   },
   "contact": {
-    "presentation": "Envoyez-moi un message, j'y répondrai dans les meilleurs délais ! :)",
-    "name": "Nom",
-    "subject": "Sujet",
-    "send": "Envoyer",
-    "loading": "Chargement",
-    "social": "Vous pouvez également me retrouver sur mes différents réseaux"
+    "presentation": "Contactez-moi via un de mes réseaux !"
   }
 }

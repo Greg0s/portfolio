@@ -19,11 +19,6 @@
     "presentation": "I am a graduated multimedia engineer from <a class='intext' target='_blank' href='https://www.ingenieur-imac.fr/'>IMAC</a> (ESIEE), an engineering school that blends art and science.<br>I am extremely passionate about digital and visual creation and thrive on continuous learning in multimedia fields, such as web development and digital design."
   },
   "contact": {
-    "presentation": "Send me a message, I will answer as soon as possible! :)",
-    "name": "Name",
-    "subject": "Subject",
-    "send": "send",
-    "loading": "loading",
-    "social": "You can also find me on my various social networks"
+    "presentation": "Contact me through one of my networks!"
   }
 }
