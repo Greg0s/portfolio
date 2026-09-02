@@ -8,8 +8,18 @@
 
   //----------------------------------recaptcha
 
+  // Secret loaded from environment (set on the host) or from a local,
+  // git-ignored config.php — never hardcoded / committed to the repo.
+  $config_file = __DIR__ . '/config.php';
+  if (is_file($config_file)) {
+    require $config_file;
+  }
+  if (!defined('RECAPTCHA_SECRET_KEY')) {
+    define('RECAPTCHA_SECRET_KEY', getenv('RECAPTCHA_SECRET_KEY') ?: '');
+  }
+
   function reCaptcha($recaptcha){
-    $secret = "6LcoT94ZAAAAAHAgn-0mD2XUmS2E-hEvFlFlbYzo";
+    $secret = RECAPTCHA_SECRET_KEY;
     $ip = $_SERVER['REMOTE_ADDR'];
   
     $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
