@@ -21,7 +21,6 @@ The site is deployed via GitHub Pages (see `CNAME` → `gregoiretinn.es`).
 - `assets/lang/lang-fr.json`, `assets/lang/lang-en.json` — translation strings, keyed and referenced via `data-localize="section.key"` attributes in HTML
 - `assets/vendor/` — third-party libraries (Bootstrap, AOS, Swiper, isotope, php-email-form, bootstrap-icons) — vendored, do not hand-edit
 - `assets/img/` — images (a `source` subfolder for originals is gitignored)
-- `forms/contact.php` — server-side contact form handler (PHP, uses reCAPTCHA + mail()); only runs on the PHP-capable host, not on GitHub Pages itself
 
 ## Working conventions
 

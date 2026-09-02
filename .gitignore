@@ -5,6 +5,3 @@
 
 # Claude Code local files
 .claude/
-
-# Local secrets, never commit real credentials
-/forms/config.php
